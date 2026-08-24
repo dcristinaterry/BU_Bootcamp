@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Module2",
+        "Module3"
+    ],
+    "java.project.referencedLibraries": [
+        "/Users/cristinaterry/Documents/GitHub/BU_Bootcamp/lib/junit-platform-console-standalone-6.1.3.jar"
+    ]
+}
