@@ -39,4 +39,15 @@ public class GradeAnalyzerTest {
         assertEquals(88.0, GradeAnalyzer.calculateAverage(scores)); 
     }
 
+    @Test
+    void calculateAverage_handlesNegativeValues() {
+        ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(-10, 10));
+        assertEquals(o.0, GradeAnalyzer.calculateAverage(scores));
+    }
+
+    @Test
+    void calculateAverage_handlesTwoValuesWithDecimalResult() {
+        ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(90, 91));
+     assertEquals(90.5, GradeAnalyzer.calculateAverage(scores));
+    }
 }
