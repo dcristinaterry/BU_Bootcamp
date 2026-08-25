@@ -42,7 +42,7 @@ public class GradeAnalyzerTest {
     @Test
     void calculateAverage_handlesNegativeValues() {
         ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(-10, 10));
-        assertEquals(o.0, GradeAnalyzer.calculateAverage(scores));
+        assertEquals(0.0, GradeAnalyzer.calculateAverage(scores));
     }
 
     @Test
