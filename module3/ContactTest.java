@@ -45,6 +45,16 @@ public class ContactTest {
     Contact c = new Contact("Alan Turing", "555-0001");
     assertTrue(c.toString().contains("555-0001"));
   }
-
+ 
+  @Test
+  void setName_updateName(){
+    contact.setName("Ada Love");
+    assertEquals("Ada Love", contact.getName());
+  }
+  @Test
+  void setPhone_updatePhone(){
+    contact.setPhone("+1 415 450 9999");
+    assertEquals("+1 415 450 9999", contact.getPhone());
+  }
 
 }
